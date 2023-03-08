@@ -3,18 +3,16 @@
 /*********/
 /* FONTS */
 /*********/
-@font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+/* @font-face {
+	font-family: "futura-pt-bold", sans-serif;
+	src: url('../fonts/futurabold.ttf') format('ttf'),
+			 url('../fonts/futurabold.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
+	font-display: fallback;
+} */
 
-}
-
-
-
-
+ @import url("https://use.typekit.net/mqx0iaf.css");
 
 /**************/
 /* CSS REMEDY */
@@ -27,10 +25,6 @@ button:not[disabled], summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -40,18 +34,119 @@ button:not[disabled], summary {
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
-body {
+/* body {
   font-family:eenfont, sans-serif;
   color:var(--color-text);
   background-color:var(--color-background);
-}
+} */
 
 /* jouw code */
+main section h1 {
+	text-align: center;
+}
+
+main section h1 span {
+	font-family: "futura-pt-bold", sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+	font-style: normal;	
+	color: 	#0276a8;
+	position: relative;
+}
+
+main section h1 span:nth-of-type(1):before {
+	content: "";
+	position: absolute;
+	height: 1.2em;
+	width: 0.6em;
+	left: -1em;
+	top: -0.2em;
+	transform: rotate(35deg);
+	/*bron: https://stackoverflow.com/questions/22352311/how-do-i-draw-a-diagonal-div */
+
+	background-image: 
+	radial-gradient(
+		white 50%,
+		transparent 50%
+	),
+	radial-gradient(
+		white 50%,
+		transparent 50%
+	),
+	radial-gradient(
+		white 50%,
+		transparent 50%
+	),
+
+	linear-gradient(
+		#e31a37 48%,
+		white 48% 52%,
+		#0276a8 52%
+	);
+
+	background-position: 
+	0.15em 0.15em,
+	0.27em 0.65em,
+	0.03em 0.87em,
+	left top;
+
+	background-size:
+	0.3em 0.3em,
+	0.3em 0.3em,
+	0.3em 0.3em,
+	cover;
+
+	background-repeat: no-repeat;
+	border-radius: 5%;
+
+	animation-name: domino;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes domino {
+	from {
+		transform: rotate(0deg);
+		}
+	to {
+		transform: rotate(45deg);
+	  }
+}
+/* bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1 */
+
+/* activeert animatie van spans */
+main section h1 span {
+	display: inline-block
+}
+
+main section h1 span:nth-of-type(2){
+	animation-name: letterd;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes letterd {
+
+	from {
+		transform: rotate(90deg);
+		}
+	to {
+		transform: rotate(180deg);
+	  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
