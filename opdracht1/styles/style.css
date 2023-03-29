@@ -57,13 +57,12 @@ main section h1 span {
 	position: relative;
 }
 
-main section h1 span:nth-of-type(1):before {
+main section h1 span:first-of-type::before {
 	content: "";
 	position: absolute;
 	height: 1.2em;
 	width: 0.6em;
 	left: -1em;
-	top: -0.2em;
 
 
 	background-image: 
@@ -118,23 +117,41 @@ main section h1 span:nth-of-type(1):before {
 /*bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1 */
 
 /* activeert animatie van spans */
-main section h1 span {
+/* Animatie letter O */
+main section h1 span:not(span:first-of-type) {
 	display: inline-block
 }
 
-main section h1 span:nth-of-type(2){
-	animation-name: letterd;
+main section h1 span:nth-of-type(3){
+	animation-name: letterO;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
 
-@keyframes letterd {
+@keyframes letterO {
 
 	from {
-		transform: rotate(90deg);
+		transform: rotate(0deg);
 		}
 	to {
 		transform: rotate(180deg);
+	  }
+}
+
+/* Animatie letter M */
+main section h1 span:nth-of-type(2){
+	animation-name: letterM;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes letterM {
+
+	from {
+		transform: rotate(0deg);
+		}
+	to {
+		transform: rotate(30deg);
 	  }
 }
 

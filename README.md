@@ -14,9 +14,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1
+  2. bron: https://stackoverflow.com/questions/22352311/how-do-i-draw-a-diagonal-div
 
 
 
@@ -32,10 +31,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik wil er voor zorgen dat ik voor week 2 mijn font er in heb kunnen verwerken;
+  - Ik wil alvast het domino steentje voor het logo er in coderen;
  
 </details>
 
@@ -52,15 +49,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+ Ik heb nu geleerd hoe je vormen in je css kan coderen zonder een afbeelding te gebruiken en hoe je iets kan roteren door middel van animatie.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/gelukt.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+ Het is mij nog niet gelukt om de rest van de letters ook om te laten vallen. Tot nu tikt alleen het domino steentje tegen de letter 'D' aan, maar ik wil er ook nog voor zorgen dat de rest nog gaat omvallen. Omdat ik 'before' heb gebruikt, gaat de letter 'D' ook mee met het roteren, dus ik moet er even achter zien te komen hoe ik dit voorkom.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/bummer" width="375px" alt="bummer.png">
 </details>
 
 
@@ -77,10 +74,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik wil er voor zorgen dat de gebruiker een nummer kan toevoegen;
+  - Ik wil er voor zorgen dat de gebruiker nummers kan sorteren;
+  - Ik wil ervoor zorgen dat mijn website er netjes uit ziet.
 </details>
 
 
