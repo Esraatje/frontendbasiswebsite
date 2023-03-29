@@ -64,8 +64,7 @@ main section h1 span:nth-of-type(1):before {
 	width: 0.6em;
 	left: -1em;
 	top: -0.2em;
-	transform: rotate(35deg);
-	/*bron: https://stackoverflow.com/questions/22352311/how-do-i-draw-a-diagonal-div */
+
 
 	background-image: 
 	radial-gradient(
@@ -115,7 +114,8 @@ main section h1 span:nth-of-type(1):before {
 		transform: rotate(45deg);
 	  }
 }
-/* bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1 */
+/*bron: https://stackoverflow.com/questions/22352311/how-do-i-draw-a-diagonal-div */
+/*bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1 */
 
 /* activeert animatie van spans */
 main section h1 span {
