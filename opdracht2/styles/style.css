@@ -3,18 +3,7 @@
 /*********/
 /* FONTS */
 /*********/
-@font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-
-}
-
-
-
-
+ @import url("https://use.typekit.net/ksa0srl.css");
 
 /**************/
 /* CSS REMEDY */
@@ -27,31 +16,84 @@ button:not[disabled], summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#fff;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
-  background-color:var(--color-background);
+	height: 130vh;
+	display: grid;
+	place-content: center;
+	place-items: center;
+	font-family: poppins, sans-serif;
+  	color:var(--color-text);
+  	background-color:var(--color-background);
 }
 
-/* jouw code */
+@media (prefers-color-scheme: dark){
+	:root {
+		--color-text:#fff;
+		--color-background:#111;
+	}
+}
+body ul li{
+	list-style-type: none
+}
+
+/* Nummer 1 */
+body ul li:first-of-type{
+	background-color: pink;
+	color: #111;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+/* Nummer 2 */
+body ul li:nth-of-type(2){
+	background-color: #90ee90;
+	color: #111;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+/* Nummer 3 */
+body ul li:nth-of-type(3){
+	background-color: #add8e6;
+	color: #111;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+/* Nummer 4 */
+body ul li:nth-of-type(4){
+	background-color: #CBC3E3;
+	color: #111;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+}
+
+body ul li button{
+	border-radius: 1em;
+	padding: 0.5em;
+	font-family: poppins;
+}
+
+/* bron: codepen */
+li.sortable-drag{
+	background: gold;
+	cursor: grabbing
+}	
+
 

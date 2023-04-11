@@ -16,6 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
   1. bron: https://www.simplilearn.com/tutorials/css-tutorial/css-keyframes#css_keyframes_example_1
   2. bron: https://stackoverflow.com/questions/22352311/how-do-i-draw-a-diagonal-div
+  3. bron: https://www.w3schools.com/howto/howto_css_responsive_text.asp 
 
 
 

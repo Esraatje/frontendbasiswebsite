@@ -31,17 +31,29 @@ button:not[disabled], summary {
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#fff;
+	--domino-blauw:#0276a8;
+}
+
+@media (prefers-color-scheme: dark){
+	:root {
+		--color-text:#fff;
+		--color-background:#111;
+		--domino-blauw:#0276a8;
+	}
 }
 
 /****************/
 /* JOUW STYLING */
 /****************/
-/* body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
-  background-color:var(--color-background);
-} */
+body {
+	height: 100vh;
+	display: grid;
+	place-content: center;
+	place-items: center;
+  	color: var(--color-text);
+ 	background-color: var(--color-background);
+}
 
 /* jouw code */
 main section h1 {
@@ -53,16 +65,21 @@ main section h1 span {
 	font-weight: 700;
 	font-size: 4em;
 	font-style: normal;	
-	color: 	#0276a8;
+	color: 	var(--domino-blauw);
 	position: relative;
+
+	animation-fill-mode: forwards;
+	transform-origin: right bottom;
 }
 
+/* Domino steentje */
 main section h1 span:first-of-type::before {
 	content: "";
 	position: absolute;
 	height: 1.2em;
 	width: 0.6em;
 	left: -1em;
+	transform-origin: right bottom;
 
 
 	background-image: 
@@ -82,7 +99,7 @@ main section h1 span:first-of-type::before {
 	linear-gradient(
 		#e31a37 48%,
 		white 48% 52%,
-		#0276a8 52%
+		var(--domino-blauw) 52%
 	);
 
 	background-position: 
@@ -102,8 +119,9 @@ main section h1 span:first-of-type::before {
 
 	animation-name: domino;
 	animation-duration: 2s;
-	animation-delay: 1s;
+	animation-delay: 0.9s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;	
 }
 
 @keyframes domino {
@@ -137,7 +155,7 @@ main section h1 span:nth-of-type(2){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(35deg);
+		transform: rotate(45deg);
 	  }
 }
 
@@ -145,7 +163,7 @@ main section h1 span:nth-of-type(2){
 main section h1 span:nth-of-type(3){
 	animation-name: letterO;
 	animation-duration: 2s;
-	animation-delay: 2s;
+	animation-delay: 1.8s;
 	animation-iteration-count: 1;
 }
 
@@ -155,15 +173,15 @@ main section h1 span:nth-of-type(3){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(180deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter M */
 main section h1 span:nth-of-type(4){
 	animation-name: letterM;
-	animation-duration: 1s;
-	animation-delay: 2.5s;
+	animation-duration: 2s;
+	animation-delay: 2.25s;
 	animation-iteration-count: 1;
 }
 
@@ -173,15 +191,15 @@ main section h1 span:nth-of-type(4){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(30deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter I */
 main section h1 span:nth-of-type(5){
 	animation-name: letterI;
-	animation-duration: 1s;
-	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-delay: 2.6s;
 	animation-iteration-count: 1;
 }
 
@@ -191,15 +209,15 @@ main section h1 span:nth-of-type(5){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(30deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter N */
 main section h1 span:nth-of-type(6){
 	animation-name: letterN;
-	animation-duration: 1s;
-	animation-delay: 3.5s;
+	animation-duration: 2s;
+	animation-delay: 2.95s;
 	animation-iteration-count: 1;
 }
 
@@ -209,15 +227,15 @@ main section h1 span:nth-of-type(6){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(30deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter O */
 main section h1 span:nth-of-type(7){
 	animation-name: letterO;
-	animation-duration: 1s;
-	animation-delay: 4s;
+	animation-duration: 2s;
+	animation-delay: 3.3s;
 	animation-iteration-count: 1;
 }
 
@@ -227,33 +245,33 @@ main section h1 span:nth-of-type(7){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(180deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter Apostrof */
 main section h1 span:nth-of-type(8){
-	animation-name: letterApostrof;
-	animation-duration: 1s;
-	animation-delay: 4.5s;
+	animation-name: apostrof;
+	animation-duration: 2s;
+	animation-delay: 3.65s;
 	animation-iteration-count: 1;
 }
 
-@keyframes letterApostrof {
+@keyframes apostrof {
 
 	from {
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(35deg);
+		transform: rotate(45deg);
 	  }
 }
 
 /* Animatie letter S */
 main section h1 span:nth-of-type(9){
 	animation-name: letterS;
-	animation-duration: 1s;
-	animation-delay: 5s;
+	animation-duration: 2s;
+	animation-delay: 4s;
 	animation-iteration-count: 1;
 }
 
@@ -263,8 +281,23 @@ main section h1 span:nth-of-type(9){
 		transform: rotate(0deg);
 		}
 	to {
-		transform: rotate(35deg);
+		transform: rotate(45deg);
 	  }
+}
+
+/* bron: https://www.w3schools.com/howto/howto_css_responsive_text.asp */
+/* als het scherm 601px of meer is */
+@media screen and (min-width: 601px){
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
+/* als het scherm 600px of minder is */
+@media screen and (max-width: 600px){
+	h1 {
+		font-size: 1em;
+	}
 }
 
 
